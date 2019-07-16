@@ -2,14 +2,10 @@
 import React, {Component} from React;
 
 export default class CoordinatesButton extends Component {
-  onReceiveCoordinates = (props) => {
-    console.log(props)
-  }
-
   array = []
   clickEvent = (event) => {
     this.array.push(event.clientX, event.clientY)
-
+    this.props.onReceiveCoordinates(this.array)
   }
 
   render() {
