@@ -16,6 +16,7 @@ export default class CoordinatesButton extends Component {
     return (
       <div>
         <button onClick={this.clickEvent}>Button</button>
+      </div>
     )
   }
 }
