@@ -9,7 +9,7 @@ export default class CoordinatesButton extends Component {
   array = []
   clickEvent = (event) => {
     this.array.push(event.clientX, event.clientY)
-    this.props
+
   }
 
   render() {
